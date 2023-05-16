@@ -5,7 +5,6 @@ using FoodApp.Services;
 
 namespace FoodApp.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class DishesController : ControllerBase
     {
@@ -17,12 +16,12 @@ namespace FoodApp.Controllers
         }
 
         [HttpGet]
-        [Route("api/[action]")]
-        public IActionResult GetDishes(int restaurant)
+        [Route("api/[action]/{id}")]
+        public IActionResult GetDishes(int id)
         {
             try
             {
-                var res = _dishesService.GetDishes(restaurant);
+                var res = _dishesService.GetDishes(id);
                 return Ok(res);
             }
             catch (Exception ex)

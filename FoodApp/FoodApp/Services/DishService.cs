@@ -14,9 +14,9 @@ namespace FoodApp.Services
             _repo = repo;
         }
 
-        public List<Dish> GetDishes(int restaurantId)
+        public List<Dish> GetDishes(int id)
         {
-            var res = _repo.GetDishes(restaurantId);
+            var res = _repo.GetDishes(id);
             return res;
         }
     }

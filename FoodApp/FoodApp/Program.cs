@@ -15,7 +15,7 @@ builder.Services.AddCors(option =>
     option.AddDefaultPolicy(policy =>
     {
         policy.WithOrigins("http://localhost:3000")
-        .WithMethods("PUT", "GET", "DELETE", "POST")
+        .AllowAnyMethod()
         .AllowAnyHeader();
     });
 });
@@ -40,10 +40,10 @@ builder.Services.AddTransient<IDishesRepo, DishRepo>();
 
 var app = builder.Build();
 
+app.UseCors();
+
 app.UseRouting();
 app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
-app.UseCors();
 
 app.UseSwagger();
 app.UseSwaggerUI();

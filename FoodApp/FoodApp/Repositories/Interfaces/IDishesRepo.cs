@@ -4,6 +4,6 @@ namespace FoodApp.Repositories.Interfaces
 {
     public interface IDishesRepo
     {
-        List<Dish> GetDishes(int restaurantId);
+        List<Dish> GetDishes(int id);
     }
 }

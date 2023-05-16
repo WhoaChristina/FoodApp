@@ -5,7 +5,6 @@ using FoodApp.Services;
 
 namespace FoodApp.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class RestaurantController : ControllerBase
     {

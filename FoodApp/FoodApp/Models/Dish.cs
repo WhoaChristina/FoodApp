@@ -11,9 +11,11 @@ public partial class Dish
 
     public string Ingredients { get; set; } = null!;
 
-    public int Rating { get; set; }
+    public int? Rating { get; set; }
 
     public string? Comment { get; set; }
+
+    public bool HaveTried { get; set; }
 
     public virtual Restaurant Restaurant { get; set; } = null!;
 }

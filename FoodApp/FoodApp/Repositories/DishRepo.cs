@@ -11,9 +11,9 @@ namespace FoodApp.Repositories
         {
             _context = context;
         }
-        public List<Dish> GetDishes(int restaurantId)
+        public List<Dish> GetDishes(int id)
         {
-            return _context.Dishes.Where(d => d.RestaurantId == restaurantId).ToList();
+            return _context.Dishes.Where(d => d.RestaurantId == id).ToList();
         }
     }
 }
