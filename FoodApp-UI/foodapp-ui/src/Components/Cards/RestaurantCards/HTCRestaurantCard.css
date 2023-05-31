@@ -1,0 +1,44 @@
+.restaurant-head
+{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e5fffd;
+}
+
+.dishes-btn{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #0b0c12;
+    color: #e5fffd;
+    font-weight: bold;
+    border: 0.15rem solid #05b8bb;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    box-shadow: 2px 3px 5px 1px teal;
+}
+  
+.dishes-btn:hover{
+  background: #05b8bb;
+  color: #050801;
+  box-shadow: 0 0 5px #05b8bb,
+              0 0 20px #05b8bb,
+              0 0 40px #05b8bb,
+              0 0 50px #05b8bb;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.card
+{
+    display: grid;
+    grid-template-columns: 70%, 30%;
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 1.8rem;
+    border: 0.15rem solid #05b8bb;;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px 5px teal;
+}
