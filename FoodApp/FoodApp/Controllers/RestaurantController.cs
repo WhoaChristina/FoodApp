@@ -30,5 +30,20 @@ namespace FoodApp.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet]
+        [Route("api/[action]")]
+        public IActionResult GetRandom()
+        {
+            try
+            {
+                var res = _restaurantService.GetRandom();
+            return Ok(res);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

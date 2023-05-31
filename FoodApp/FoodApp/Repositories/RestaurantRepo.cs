@@ -12,6 +12,11 @@ namespace FoodApp.Repositories
             _context = context;
         }
 
+        public List<Restaurant> GetRandom()
+        {
+            return _context.Restaurants.ToList();
+        }
+
         List<Restaurant> IRestaurantRepo.GetRestaurants(string category)
         {
             return _context.Restaurants.Where(x => x.Category == category).ToList();
